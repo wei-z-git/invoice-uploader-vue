@@ -81,9 +81,9 @@ async function uploadFile() {
   formData.append('file', selectedFile.value as File);
   formData.append('invoicetype', formState.invoicetype);
   formData.append('title', formState.title || '');
-
+  const apiUrl = import.meta.env.VITE_API_URL;
   try {
-    const response = await axios.post('http://127.0.0.1:8000/v1/upload/', formData, {
+    const response = await axios.post(apiUrl+'/v1/upload/', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },
