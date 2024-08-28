@@ -1,15 +1,16 @@
 <template>
   <div id="app">
     <FileUpload />
+    <HelloWorld />
   </div>
 </template>
 
 <script>
 import FileUpload from './components/FileUpload.vue';
-
+import HelloWorld from './components/HelloWorld.vue';
 export default {
   components: {
-    FileUpload,
+    FileUpload,HelloWorld
   },
 };
 </script>
