@@ -13,6 +13,3 @@ app.use(router)
 app.use(Antd)
 app.mount('#app')
 
-
-
-
