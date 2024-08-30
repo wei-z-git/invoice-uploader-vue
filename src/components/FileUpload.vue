@@ -52,7 +52,7 @@ interface FormState {
 
 const formRef = ref();
 const formState: UnwrapRef<FormState> = reactive({
-  invoicetype: '个人贡献发票',
+  invoicetype: '团建发票',
   title: '',
   fileList: [], // 初始化为一个空数组
 });
