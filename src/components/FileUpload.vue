@@ -17,6 +17,7 @@
       :label-col="labelCol"
       :wrapper-col="wrapperCol"
     >
+      
       <a-form-item label="类型">
         <a-select v-model:value="formState.invoicetype" placeholder="请选择类型">
           <a-select-option value="个人贡献发票">个人贡献发票</a-select-option>
@@ -25,7 +26,7 @@
       </a-form-item>
       
       <a-form-item label="文件标题">
-        <a-input placeholder="请输入文件标题" v-model:value="formState.title" />
+        <a-input placeholder="标题，如panhong-666" v-model:value="formState.title" />
       </a-form-item>
       
       <a-form-item>
@@ -51,7 +52,7 @@ interface FormState {
 
 const formRef = ref();
 const formState: UnwrapRef<FormState> = reactive({
-  invoicetype: '',
+  invoicetype: '个人贡献发票',
   title: '',
   fileList: [], // 初始化为一个空数组
 });
